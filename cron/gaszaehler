@@ -1,0 +1,8 @@
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=""
+#
+# Run GasZaehler Watchdog
+# Do not change this file directly, as it is managed and changed by the plugin
+# m h dom mon dow user  command
+* * * * * root /usr/local/bin/gas_watchdog.sh > /dev/null 2>&1
